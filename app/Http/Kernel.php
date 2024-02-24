@@ -2,6 +2,7 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\CheckRole;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
@@ -35,7 +36,7 @@ class Kernel extends HttpKernel
         ],
         // 'api' => ['throttle:120,1'],
 
-        
+
     ];
 
     protected $middlewareAliases = [
@@ -50,5 +51,6 @@ class Kernel extends HttpKernel
         'signed' => \App\Http\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+        'role' => CheckRole::class, 
     ];
 }
