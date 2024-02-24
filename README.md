@@ -5,7 +5,7 @@
 database structure 👇
 <p align="center">
 
-<img src="./public/Screenshot_1.png" width="400" alt="models">
+<img src="./public/database.png" width="400" alt="models">
 </p>
 
 <!-- ctrl+ shift + v -->
